@@ -1,0 +1,6 @@
+services:
+  - type: cron
+    name: keepalive-portalcliente
+    env: docker
+    schedule: "*/5 * * * *"
+    dockerCommand: ["bash", "keepalive.sh"]
